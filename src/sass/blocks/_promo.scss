@@ -1,0 +1,24 @@
+.promo{
+	position: relative;
+	min-height: 100vh;
+	background: url('../img/background_first_screen1.1.jpg') center center/cover no-repeat;
+	padding-top: 50vh;
+	&__btns{
+		margin-left: 410px;
+		margin-top: 25px;
+		width: 250px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__link{
+		color: #000;			
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		text-decoration: none;
+		&:hover{
+			color: #000;	
+		}
+	}
+}	
