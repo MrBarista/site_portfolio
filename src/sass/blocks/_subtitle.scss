@@ -1,9 +1,14 @@
 .subtitle{
+	position: relative; //для миксина
 	font-style: normal;
 	font-weight: 700;
 	color: #fff;
 	font-size: 16px;
+	z-index: 2;
 	&_promo{
 		margin-left: 410px;
+		padding-left: 10px;
+		margin-bottom: 9px;
 	}
+	@include before_circle;
 }

@@ -21,4 +21,35 @@
 			color: #000;	
 		}
 	}
+	&__social{
+		display: flex;
+		position: absolute;
+		align-items: center;
+		top: 65%;
+		left: -160px;
+		transform: rotate(-90deg);
+	}
+	&__text{
+		font-style: normal;
+		font-weight: 700;
+		font-size: 16px;
+		color:#fff;
+		margin-right: 15px;		
+	}
+	&__line{
+		width: 70px;
+		height: 0px;	
+		border: 1px solid #fff;
+		margin-right: 15px;		
+	}
+	&__icon{
+		display: flex;
+		height: 20px;
+		width: 20px;
+		margin-right: 20px;	
+	}
+	&__settings{
+		height: 100%;
+		width: 100%;
+	}
 }	
