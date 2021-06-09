@@ -1,6 +1,6 @@
 @mixin before_circle {
     &::before{
-        content:'';
+        content:"";
         position: absolute;
         background-color:$main_color;
         height: 36px;
