@@ -1,0 +1,9 @@
+.line{
+    margin-top: 25px;
+    width: 60px;
+    height: 3px;
+    background-color:$main_color;
+    &_mt4px{
+        margin-top: 4px;
+    }
+}

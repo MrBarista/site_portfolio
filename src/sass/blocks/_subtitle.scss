@@ -10,5 +10,8 @@
 		padding-left: 10px;
 		margin-bottom: 9px;
 	}
+	&_black{
+		color: #000;
+	}
 	@include before_circle;
 }
