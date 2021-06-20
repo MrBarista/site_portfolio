@@ -1,0 +1,92 @@
+.exp{
+    padding-top:80px;
+    &__column{
+        ul{
+            padding: 0;
+            list-style-type: none;
+            li{
+                position: relative;
+                padding: 45px 0 0 48px;
+                &::after{
+                    content:"";
+                    position: absolute;
+                    width: 1px;
+                    height:calc(100% + 4px);
+                    background:#000;
+                    top: -8px;
+                    left: 7px;
+                }
+            }
+        }
+        &-title{
+            position: relative;
+            font-size: 20px;
+            line-height: 30px;
+            margin: 0;
+            padding-left: 43px;
+            &::before{
+                content:"";
+                position: absolute;
+                height: 15px;
+                width: 15px;
+                border-radius: 100%;
+                background:$main_color;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0px;
+            }         
+        }
+    }
+    &__wrapper{
+        padding-left: 65px;
+        padding-right: 89px;
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        column-gap: 136px;
+    }
+    &__item{
+        position: relative;
+        &-head{
+            padding-left: 56px;
+        }
+        &-title{
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 21px;
+        }
+        &-subtitle{
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }
+        &-descr{
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            margin-top: 12px;
+        }
+        &-icon{
+            @include before_circle;
+            &::before{
+                top: 0px;
+                left: 0px;
+            }
+            &::after{
+                content:"";
+                position: absolute;
+                width: 42px;
+                height: 1px;
+                background:#000;
+                top: 17px;
+                left: -41px;
+            }
+            img{
+                position: absolute;
+                top: 14px;
+                left: 17px;
+            }
+
+        }
+    }
+}
