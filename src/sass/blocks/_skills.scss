@@ -1,0 +1,58 @@
+.skills{
+    padding-top: 80px;
+    &__wrapper{
+        margin-top: 60px;
+        padding: 0 10px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 270px);
+        grid-template-rows: repeat(auto-fill, minmax(270px, 1fr));
+        gap: 13px;
+        &-tab{
+            padding: 30px 30px 25px 30px;
+            border: solid 1px;
+            &-icon{
+                height: 65px;
+                img{
+                    height: 100%;
+                }
+                &-jquery{
+                    img{
+                        height: 73%;
+                    }
+                }
+                &-sass{
+                    img{
+                        height: 120%;
+                    }
+                }
+                &-git{
+                    img{
+                        height: 120%;
+                    }
+                }
+                &-gulp{
+                    img{
+                        height: 107%;
+                    }
+                }
+                &-npm{
+                    img{
+                        height: 135%;
+                    }
+                }
+            }
+            &-title{
+                margin-top: 20px;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 21px;
+            }
+            &-descr{
+                margin-top: 15px;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 18px;
+            }
+        }
+    }
+}
