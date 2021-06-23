@@ -1,0 +1,43 @@
+.portfolio{
+	padding-top: 80px;
+	&__wrapper{
+		margin-top: 60px;
+		display: grid;
+		grid-template-columns: repeat(4, minmax(280px, 1fr));
+		grid-template-rows: repeat(2, minmax(280px, 1fr));
+		grid-auto-rows: minmax(280px, 1fr);
+		gap: 5px;
+		&-item{
+			position: relative;
+			overflow: hidden;
+			transition: all 0.3s;
+			&-img{
+				img{
+					width: 100%;
+				}
+			}
+			&_uber{
+				grid-column: 2 / 4 ;
+				grid-row: 1 / 2; 
+				img{
+					position: absolute;
+					width: 121%;
+					left: -87px;
+				}
+			}
+			&_wordpress{
+				grid-column: 3 / 4 ;
+				grid-row: 2 / 3;
+			}
+			&_pulse{
+				grid-column: 2 / 3 ;
+				grid-row: 2 / 3;
+			}
+			&:hover{
+				filter: drop-shadow(3px 3px 15px $main_color);
+				transform: scale(1.05);
+				z-index: 10;
+			}
+		}
+	}
+}
