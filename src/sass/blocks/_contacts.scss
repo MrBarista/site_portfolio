@@ -23,7 +23,10 @@
 				margin-top: 20px;
 				display: flex;	
 				justify-content: space-between;
-				align-content: center;					
+				align-content: center;
+				.vk-settings{    //для красоты отображения иконки
+					transform: scale(1.06);
+				}					
 				&-link{
 					height: 30px;
 					width: 30px;

@@ -23,6 +23,7 @@
                 &-sass{
                     img{
                         height: 120%;
+                        transform: translateY(-10px);
                     }
                 }
                 &-git{
@@ -33,6 +34,7 @@
                 &-gulp{
                     img{
                         height: 107%;
+                        transform: translateX(-19px);
                     }
                 }
                 &-npm{
