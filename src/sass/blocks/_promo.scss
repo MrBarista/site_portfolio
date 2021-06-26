@@ -3,10 +3,10 @@
 	min-height: 100vh;
 	background: url('../img/background_first_screen1.1.jpg') center center/cover no-repeat;
 	padding-top: 50vh;
-	&__btns{
+	&__btn{
 		margin-left: 410px;
 		margin-top: 25px;
-		width: 250px;
+		width: 25%;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -18,7 +18,7 @@
 		font-size: 14px;
 		text-decoration: none;
 		&:hover{
-			color: #000;	
+			color: #000;		//что бы ссылка при наведении не была синей
 		}
 	}
 	&__social{
