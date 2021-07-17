@@ -9,7 +9,7 @@
 		&-item{
 			&-img{
 				img{
-					width: 97%;
+					width: 97%;	
 				}
 			}
 			&-descr{
@@ -89,7 +89,7 @@
 		
 	}
 	&__policy{
-		display: flex;
+		display: inline-block;
 		font-weight: 400;
 		font-size: 12px;
 		line-height: 18px;

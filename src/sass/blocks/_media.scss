@@ -38,6 +38,27 @@
 			justify-content: center;
 		}
 	}
+
+	.contacts{
+		&__wrapper{
+			padding: 0px;
+			grid-template-columns: 370px 585px;
+			column-gap:10px;
+			justify-content: unset;
+			&-item{
+				position: relative;
+				overflow: hidden;
+				&-img{
+					img{
+						position: absolute;
+						width: 111%;
+						left: -14px;
+					}
+				}
+			}
+		}
+	}
+
 }
 
 @media (max-width: 992px){
@@ -75,7 +96,24 @@
 			column-gap: 20px;
 		}
 	}
-	
+	.contacts{
+		&__wrapper{
+			grid-template-columns: auto;
+			&-item{
+				&-img{
+					display: none;
+				}
+				&-social{
+					width: 130px;
+				}
+			}
+		}
+		&__form{
+			grid-template-columns: repeat(2, auto) ;
+			justify-content: unset;
+		}
+		
+	}
 }
 
 @media (max-width: 768px){
@@ -116,6 +154,48 @@
 			grid-template-columns: auto;
 			grid-template-rows: auto auto;
 			row-gap: 40px;
+		}
+	}
+
+	.portfolio{
+		&__wrapper{
+			margin-top: 40px;
+			grid-template-columns: 280px;
+			grid-template-rows: repeat(3, 280px);
+			grid-auto-rows: 280px;
+			&-item{
+				&_uber{
+					grid-column: unset ;
+					img{
+						width: 242%;
+						left: -274px;							
+					}
+				}
+				&_wordpress{
+					grid-column: unset ;
+					grid-row: unset;
+				}
+				&_pulse{
+					grid-column: unset ;
+					grid-row: unset;
+				}&:hover{
+					filter: none;
+					transform: none;
+					z-index: 10;
+				}	
+			}
+		}
+	}
+
+	.contacts{
+		&__form{
+			grid-template-columns: repeat(2, auto) ;
+		}
+	}
+
+	.btn{
+		&:hover{
+			background:$main_color;
 		}
 	}
 
@@ -169,6 +249,7 @@
 		margin-top: 15px;
 	}
 	.exp{
+		padding-top: 40px;
 		&__wrapper{
 			margin-top: 40px;
 		}
@@ -179,8 +260,33 @@
 			}
 		}
 	}
+	.portfolio{
+		padding-top: 40px;
+	}
+	.contacts{
+		padding: 40px 0 50px 0;
+		&__form{
+			grid-template-columns:auto;
+			grid-template-rows: 45px 45px 140px auto;	
+		}
+		&__textarea{
+			grid-row: unset;
+			grid-column: unset;
+		}
+		&__triggers{
+			grid-column: unset;
+			grid-template-columns: auto;
+			justify-items: center;
+			row-gap: 20px;
 
-	
-
+		}
+		&__policy{
+			grid-row: 1/2;
+			text-align: center;
+		}
+	}
+	.policy{
+		font-size: 14px;
+	}
 
 }
