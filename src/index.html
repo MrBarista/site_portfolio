@@ -43,7 +43,7 @@
 </head>
 
 <body>
-	<section class="promo">
+	<section id="up" class="promo">
 		<div class="hamburger">
 			<span></span>
 			<span class="long"></span>
@@ -376,7 +376,7 @@
 					<form action="#" class="contacts__form">
 
 						<div class="contacts__input">
-							<input required name="name" id="name" type="text">
+							<input required maxlength="20" name="name" id="name" type="text">
 							<label for="name">Ваше имя</label>
 						</div>
 
@@ -404,6 +404,12 @@
 			</div>
 		</div>
 	</section>
+
+	<a href="#up" class="pageup">
+		<img src="icons/hand-point-up-solid.svg" alt="handup">
+	</a>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>
