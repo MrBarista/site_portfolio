@@ -3,25 +3,45 @@ const hamburger = document.querySelector('.hamburger'),
 	  close = document.querySelector('.menu__close');
 	  overlayclose = document.querySelector('.menu__overlay');
 	
-hamburger.addEventListener('click',() => {
+hamburger.addEventListener('click',() => {   //открывает меню по клику на гамбургер
 	menu.classList.add('active');
 })
 
-close.addEventListener('click',() =>{
+close.addEventListener('click',() =>{   //закрывает меню по клику на крестик
 	menu.classList.remove('active');
 })
 
-overlayclose.addEventListener('click',() =>{
+overlayclose.addEventListener('click',() =>{  //закрывает меню если кликнуть куда-нить кроме меню(оверлэй)
 	menu.classList.remove('active');
 })
 
-$(window).scroll(function(){
+$(window).scroll(function(){     //после дальности в 700 появляется стрелка "вверх"
 	if ($(this).scrollTop() > 700 ){
 		$('.pageup').fadeIn();
 	} else {
 		$('.pageup').fadeOut();
 	}
 });
+
+//СКРИПТ для отправки данных на почту
+$('form').submit(function(e) {  //ВСЕ наши формы, когда мы подтверждаем отправку данных
+	e.preventDefault(); // ОТМЕНЯЕТ стандартное поведение браузера
+	$.ajax({
+		type: "POST" ,   //POST - отдать данные серверу GET - получить данные с сервера
+		url:"mailer/smart.php",  // КАКОЙ обработчик будет задействован
+		data: $(this).serialize() //ДАННЫЕ которые мы хотим отправить на сервер нужно обработать
+	}).done(function(){  //КОГДА мы выполнили операцию ajax, выполним ещё какое то действие
+		$(this).find("input").val(""); //В этой форме нахоим все инпуты и очищаем их
+		$(this).find("textarea").val(""); //В этой форме нахоим все textarea и очищаем их
+
+
+		$('form').trigger('reset');
+		 //ВСЕ мои формы которые есть на сайте должны очиститься
+	});
+	return false;
+}) ;
+
+
 
 /* $('.contacts__form').validate({
 	rules: {
