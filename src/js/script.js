@@ -41,6 +41,7 @@ $('form').submit(function(e) {  //ВСЕ наши формы, когда мы п
 	return false;
 }) ;
 
+new WOW().init(); // для библиотеки wow.js
 
 
 /* $('.contacts__form').validate({
