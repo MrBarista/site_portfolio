@@ -5,15 +5,15 @@ const hamburger = document.querySelector('.hamburger'),
 	
 hamburger.addEventListener('click',() => {   //открывает меню по клику на гамбургер
 	menu.classList.add('active');
-})
+});
 
 close.addEventListener('click',() =>{   //закрывает меню по клику на крестик
 	menu.classList.remove('active');
-})
+});
 
 overlayclose.addEventListener('click',() =>{  //закрывает меню если кликнуть куда-нить кроме меню(оверлэй)
 	menu.classList.remove('active');
-})
+});
 
 $(window).scroll(function(){     //после дальности в 700 появляется стрелка "вверх"
 	if ($(this).scrollTop() > 700 ){
